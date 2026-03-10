@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +13,11 @@
       grid-template-columns: 1fr 1fr 1fr;
       gap: 48px;
       margin-top: 24px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
+
     .degu-card h3 {
       font-family: var(--font-title);
       font-weight: 700;
@@ -22,37 +27,56 @@
       margin-bottom: 14px;
       color: var(--beige);
     }
-    .degu-card p { margin-bottom: 10px; }
-    .degu-card ul { list-style: none; margin: 8px 0; }
-    .degu-card ul li { font-size: 0.85rem; line-height: 1.8; color: rgba(240,230,218,.85); }
-    .degu-card ul li::before { content: "• "; }
+
+    .degu-card p {
+      margin-bottom: 10px;
+    }
+
+    .degu-card ul {
+      list-style: none;
+      margin: 8px 0;
+    }
+
+    .degu-card ul li {
+      font-size: 0.85rem;
+      line-height: 1.8;
+      color: rgba(240, 230, 218, .85);
+    }
+
+    .degu-card ul li::before {
+      content: "• ";
+    }
+
     .degu-aside {
-      font-family: var(--font-title);
-      font-weight: 700;
-      font-size: 0.95rem;
-      line-height: 1.9;
+      font-family: var(--font-hand);
+      font-size: 1.1rem;
+      line-height: 1.7;
       text-align: center;
       color: var(--beige);
-      border-left: 1px solid rgba(240,230,218,.3);
+      border-left: 1px solid rgba(240, 230, 218, .3);
       padding-left: 40px;
     }
 
     @media (max-width: 900px) {
-      .degu-cards { grid-template-columns: 1fr; gap: 24px; }
-      .degu-aside { border-left: none; border-top: 1px solid rgba(240,230,218,.3); padding-left: 0; padding-top: 24px; }
+      .degu-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 100%;
+      }
+
+      .degu-aside {
+        border-left: none;
+        border-top: 1px solid rgba(240, 230, 218, .3);
+        padding-left: 0;
+        padding-top: 24px;
+      }
     }
   </style>
 </head>
+
 <body data-page="vins">
 
   <div id="nav-placeholder"></div>
-
-  <div class="page-header">
-    <a href="index.html">
-      <span class="logo-main">ARROSÉ</span>
-      <span class="logo-sub">La cave fleurie</span>
-    </a>
-  </div>
 
   <!-- Qu'est-ce qu'on boit ? -->
   <section class="section">
@@ -60,43 +84,51 @@
       <div>
         <h2>Qu'est-ce qu'on boit ?</h2>
         <p>Chez nous, il y en a pour tous les goûts et toutes les envies.</p>
-        <p>Arrosé c'est près de <strong>300 références de vins</strong>, issues des plus beaux terroirs français. De la Bourgogne à la Corse en passant par le Languedoc et l'Alsace, nous nous engageons à mettre en lumière des domaines indépendants et passionnés par leur métier.</p>
-        <p>Pas peu fiers de notre région, nous avons fait le choix de vous proposer des bières et des cidres uniquement bretons. N'y voyez là aucun chauvinisme bien sûr. (on a même du vin made in BZH…)</p>
-        <p>Côté spiritueux, environ <strong>80 bouteilles</strong> ornent la vieille armoire de Mamie, ne les laissez donc pas prendre la poussière. Au menu : whisky, gin, rhum, ainsi que différentes liqueurs et apéritifs.</p>
+        <p>Arrosé c'est près de <strong>300 références de vins</strong>, issues des plus beaux terroirs français. De la
+          Bourgogne à la Corse en passant par le Languedoc et l'Alsace, nous nous engageons à mettre en lumière des
+          domaines indépendants et passionnés par leur métier.</p>
+        <p>Pas peu fiers de notre région, nous avons fait le choix de vous proposer des bières et des cidres uniquement
+          bretons. N'y voyez là aucun chauvinisme bien sûr. (on a même du vin made in BZH…)</p>
+        <p>Côté spiritueux, environ <strong>80 bouteilles</strong> ornent la vieille armoire de Mamie, ne les laissez
+          donc pas prendre la poussière. Au menu : whisky, gin, rhum, ainsi que différentes liqueurs et apéritifs.</p>
       </div>
-      <!-- Remplacer par : <img src="images/cave-vins.jpg" alt="Cave à vins" /> -->
-      <div class="ph" style="height:420px;"></div>
+      <img src="images/cave.jpeg" alt="Cave à vins" style="height:420px; object-fit:cover;" />
     </div>
   </section>
 
   <!-- Une petite dégustation ? -->
   <section class="section-dark">
-    <h2>Une petite dégustation, ça te tente ?</h2>
+    <h2 style="font-family: var(--font-hand); text-transform: none; letter-spacing: 0;">Une petite dégustation, ça te
+      tente ?</h2>
     <div class="degu-cards">
       <div class="degu-card">
         <h3>Une dégustation à thème</h3>
-        <p>En fonction de la période ou encore des coups de cœurs de Tanguy, tu as le choix entre deux types de dégustation :</p>
+        <p>En fonction de la période ou encore des coups de cœurs de Tanguy, tu as le choix entre deux types de
+          dégustation :</p>
         <ul>
           <li><strong>Une initiation</strong></li>
           <li><strong>Une dégustation à thème</strong></li>
         </ul>
-        <br/>
+        <br />
         <p>Pour voir le planning :</p>
-        <a class="cta-link cta-link-beige" href="#calendrier-degustations">Planning des dégustations ↓</a>
+        <a class="cta-link cta-link-beige" href="docs/planning-degustations.pdf" target="_blank">→ Planning des
+          dégustations ←</a>
       </div>
       <div class="degu-card">
         <h3>Une dégustation à ton image</h3>
-        <p>Tu as un groupe de copain(e)s, de cousin(e)s ou encore de collègues et tu souhaites découvrir le monde de l'œnologie ?</p>
-        <p>On peut créer une soirée de dégustation adaptée à tes envies. On la planifie ensemble ? Passe à la boutique ou appelle-nous au xx xx xx xx xx.</p>
+        <p>Tu as un groupe de copain(e)s, de cousin(e)s ou encore de collègues et tu souhaites découvrir le monde de
+          l'œnologie ?</p>
+        <p>On peut créer une soirée de dégustation adaptée à tes envies. On la planifie ensemble ? Passe à la boutique
+          ou appelle-nous au xx xx xx xx xx.</p>
       </div>
-      <div class="degu-aside">
-        Chaque dégustation s'accompagne d'un plateau de fromage et de charcuterie.<br/><br/>
+      <div class="degu-aside" style="display: flex; align-items: center; justify-content: center;">
+        Chaque dégustation s'accompagne d'un plateau de fromage et de charcuterie.<br /><br />
         Elle se déroule à partir de 19h30, à la fermeture de la boutique.
       </div>
     </div>
   </section>
 
-  <!-- Calendrier dégustations -->
+  <!-- Calendrier dégustations
   <section class="section-dark" style="padding-top: 0;" id="calendrier-degustations">
     <h2>Calendrier des dégustations – xx € / personne</h2>
     <p style="color:rgba(240,230,218,.8); font-size:.85rem; margin-bottom:32px;">
@@ -141,7 +173,7 @@
         <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Demande spécifique -->
   <section class="demande-section">
@@ -155,4 +187,5 @@
   <div id="footer-placeholder"></div>
   <script src="js/components.js"></script>
 </body>
+
 </html>

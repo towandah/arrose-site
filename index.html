@@ -52,6 +52,7 @@
       overflow: hidden;
       cursor: pointer;
       display: block;
+      height: 100%;
     }
 
     .hero-card-bg {
@@ -72,8 +73,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end;
-      padding-bottom: 32px;
+      justify-content: center;
+      /* ← change flex-end en center */
+      text-align: center;
     }
 
     .hero-card-title {
@@ -90,6 +92,10 @@
       font-size: 0.82rem;
       letter-spacing: 0.06em;
       margin-top: 6px;
+    }
+
+    .hero-card-overlay {
+      text-align: center;
     }
 
     /* ── PRÉSENTATION ───────────────────────────────── */
@@ -216,14 +222,14 @@
   <!-- Cartes Vins / Fleurs -->
   <div class="hero-grid">
     <a class="hero-card" href="vins.html">
-      <div class="hero-card-bg ph" style="height:100%;"></div>
+      <img class="hero-card-bg" src="images/vins.jpg" alt="Vins" />
       <div class="hero-card-overlay">
         <span class="hero-card-title">VINS</span>
         <span class="hero-card-sub">informations · planning dégustation</span>
       </div>
     </a>
     <a class="hero-card" href="fleurs.html">
-      <div class="hero-card-bg ph-green" style="height:100%;"></div>
+      <img class="hero-card-bg" src="images/fleurs.jpeg" alt="Fleurs" />
       <div class="hero-card-overlay">
         <span class="hero-card-title">FLEURS</span>
         <span class="hero-card-sub">informations · commandes · planning ateliers</span>
@@ -245,10 +251,9 @@
       </ul>
       <p>De ces trois points naît un projet commun : créer un lieu où nos deux univers se rencontrent, se côtoient et
         fonctionnent ensemble, chez nous. Vous souhaitez plus de détails ? Nous serons ravis de vous en dire plus à
-        Arrosé, La Cave Fleurie.</p>
+        <b>Arrosé, La Cave Fleurie</b>.</p>
     </div>
-    <!-- Remplacer par : <img src="images/equipe.jpg" alt="Erell et Tanguy" class="pres-photo" /> -->
-    <div class="ph pres-photo"></div>
+    <img src="images/erell_tanguy.jpg" alt="Erell et Tanguy" class="pres-photo" />
   </section>
 
   <!-- Ils nous font confiance / Avis 
