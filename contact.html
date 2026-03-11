@@ -1,127 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact – Arrosé</title>
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* ── LAYOUT CONTACT ─────────────────────────────── */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      padding: 72px 48px;
-      background: var(--beige);
-    }
-    .contact-grid h2 {
-      font-family: var(--font-hand);
-      font-size: 2.6rem;
-      color: var(--bordeaux);
-      margin-bottom: 32px;
-    }
-
-    /* ── INFOS ──────────────────────────────────────── */
-    .contact-info p {
-      font-size: 0.9rem;
-      line-height: 2;
-      margin-bottom: 0;
-    }
-    .contact-info .horaires {
-      margin-top: 28px;
-      font-size: 0.85rem;
-      line-height: 2;
-    }
-    .contact-info .horaires span {
-      display: inline-block;
-      min-width: 90px;
-      font-weight: 700;
-    }
-    .contact-socials {
-      display: flex;
-      gap: 14px;
-      margin-top: 24px;
-    }
-    .contact-socials a svg {
-      width: 28px;
-      height: 28px;
-      fill: var(--bordeaux);
-      transition: fill .2s;
-    }
-    .contact-socials a:hover svg { fill: var(--vert); }
-
-    /* ── FORMULAIRE ─────────────────────────────────── */
-    .form-field {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      margin-bottom: 22px;
-    }
-    .form-field label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-    .form-field input,
-    .form-field textarea,
-    .form-field select {
-      background: transparent;
-      border: none;
-      border-bottom: 1.5px solid var(--noir);
-      padding: 8px 2px;
-      font-family: var(--font-title);
-      font-size: 0.9rem;
-      color: var(--noir);
-      outline: none;
-      resize: none;
-      transition: border-color .2s;
-      width: 100%;
-    }
-    .form-field input:focus,
-    .form-field textarea:focus,
-    .form-field select:focus {
-      border-bottom-color: var(--bordeaux);
-    }
-    .form-field select { background: var(--beige); cursor: pointer; }
-    .btn-submit {
-      background: var(--bordeaux);
-      color: var(--beige);
-      border: none;
-      padding: 14px 40px;
-      font-family: var(--font-title);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: background .2s;
-      margin-top: 8px;
-    }
-    .btn-submit:hover { background: #5a0f0d; }
-    .form-success {
-      display: none;
-      color: var(--vert);
-      font-weight: 600;
-      margin-top: 16px;
-      font-size: .9rem;
-    }
-
-    @media (max-width: 900px) {
-      .contact-grid { grid-template-columns: 1fr; padding: 40px 20px; gap: 40px; }
-    }
-  </style>
 </head>
+
 <body data-page="contact">
 
   <div id="nav-placeholder"></div>
-
-  <div class="page-header">
-    <a href="index.html">
-      <span class="logo-main">ARROSÉ</span>
-      <span class="logo-sub">La cave fleurie</span>
-    </a>
-  </div>
 
   <div class="contact-grid">
 
@@ -129,41 +18,52 @@
     <div class="contact-info">
       <h2>On est là.</h2>
       <p>
-        <strong>Arrosé – La cave fleurie</strong><br/>
-        31D rue des plages<br/>
+        <strong>Arrosé – La cave fleurie</strong><br />
+        31D rue des plages<br />
         Trébeurden – 22560
       </p>
-      <br/>
+      <br />
       <p><strong>Boutique :</strong> xx xx xx xx xx</p>
 
       <div class="horaires">
-        <span>Lundi :</span> —<br/>
-        <span>Mardi :</span> —<br/>
-        <span>Mercredi :</span> —<br/>
-        <span>Jeudi :</span> —<br/>
-        <span>Vendredi :</span> —<br/>
-        <span>Samedi :</span> —<br/>
+        <span>Lundi :</span> —<br />
+        <span>Mardi :</span> —<br />
+        <span>Mercredi :</span> —<br />
+        <span>Jeudi :</span> —<br />
+        <span>Vendredi :</span> —<br />
+        <span>Samedi :</span> —<br />
         <span>Dimanche :</span> —
       </div>
 
+      <!-- Réseaux sociaux — remplace les href par tes vrais liens -->
       <div class="contact-socials">
-        <a href="#" aria-label="Instagram">
-          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <a href="https://www.instagram.com/arrose.lacavefleurie/" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
         </a>
-        <a href="#" aria-label="Facebook">
-          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <!-- Remplace le href par ton lien Facebook -->
+        <a href="https://www.facebook.com/VOTRE_PAGE" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
         </a>
       </div>
+
+      <!-- Google Maps -->
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5259.282262153646!2d-3.5733172229332193!3d48.76964917132037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4813d31160fc229b%3A0xb0fa1f7423076555!2s31d%20Rue%20des%20Plages%2C%2022560%20Tr%C3%A9beurden%2C%20France!5e0!3m2!1sfr!2sus!4v1773260634125!5m2!1sfr!2sus"
+          width="100%" height="200" style="border:0; border-radius: 3px; display: block;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Arrosé – La cave fleurie">
+        </iframe>
+      </div>
+
     </div>
 
-    <!-- Formulaire -->
-    <!-- 
-      POUR ACTIVER FORMSPREE :
-      1. Créez un compte sur formspree.io
-      2. Créez un nouveau formulaire → copiez votre endpoint
-      3. Remplacez l'action ci-dessous par : action="https://formspree.io/f/VOTRE_ID"
-      4. Ajoutez method="POST" sur le <form>
-    -->
+    <!-- Formulaire — inchangé -->
     <div>
       <h2>Une demande spécifique ?</h2>
       <form id="contact-form" action="https://formspree.io/f/VOTRE_ID" method="POST">
@@ -201,8 +101,8 @@
           <textarea id="message" name="message" rows="5" placeholder="Dites-nous tout…" required></textarea>
         </div>
 
-        <button type="submit" class="btn-submit">Envoyer →</button>
-        <p class="form-success" id="form-success">✓ Message envoyé ! On vous répond très vite.</p>
+        <button type="submit" class="contact-btn-submit">Envoyer →</button>
+        <p class="contact-form-success" id="contact-form-success">✓ Message envoyé ! On vous répond très vite.</p>
       </form>
     </div>
   </div>
@@ -211,17 +111,17 @@
 
   <script src="js/components.js"></script>
   <script>
-    // Gestion soumission formulaire (Formspree retourne une réponse JSON)
     const form = document.getElementById('contact-form');
-    const success = document.getElementById('form-success');
-
+    const success = document.getElementById('contact-form-success');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const data = new FormData(form);
       const res = await fetch(form.action, {
         method: 'POST',
         body: data,
-        headers: { 'Accept': 'application/json' }
+        headers: {
+          'Accept': 'application/json'
+        }
       });
       if (res.ok) {
         form.reset();
@@ -230,4 +130,5 @@
     });
   </script>
 </body>
+
 </html>

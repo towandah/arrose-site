@@ -1,148 +1,180 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fleurs – Arrosé</title>
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* ── GRID ATELIERS (5 cartes) ───────────────────── */
-    .ateliers-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 16px;
-    }
-    .ateliers-grid .card-img:nth-child(4),
-    .ateliers-grid .card-img:nth-child(5) {
-      /* 2 cartes sur la deuxième ligne : les centrer */
-    }
-    .ateliers-row2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 16px;
-      max-width: 66.66%;
-    }
-
-    @media (max-width: 900px) {
-      .ateliers-grid { grid-template-columns: 1fr 1fr; }
-      .ateliers-row2 { max-width: 100%; }
-    }
-    @media (max-width: 600px) {
-      .ateliers-grid { grid-template-columns: 1fr; }
-      .ateliers-row2 { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
+
 <body data-page="fleurs">
 
   <div id="nav-placeholder"></div>
-
-  <div class="page-header">
-    <a href="index.html">
-      <span class="logo-main">ARROSÉ</span>
-      <span class="logo-sub">La cave fleurie</span>
-    </a>
-  </div>
 
   <!-- Avec quoi on bouquette ? -->
   <section class="section">
     <div class="section-2col">
       <div>
-        <h2>Avec quoi on bouquette ?</h2>
-        <p><strong>Et si on retournait à nos basiques ? Des roses en juin, du mimosa en janvier mais surtout, des fleurs qui viennent de chez nous.</strong> Chez Arrosé, on s'engage à vous proposer au maximum des fleurs de saisons provenant de Bretagne et de France.</p>
-        <br/>
-        <p><em>À noter que nous n'excluons pas la possibilité de passer des commandes de fleurs hollandaises en cas de rupture de stock, mais que cela sera spécifié en toute transparence en boutique.</em></p>
+        <h2 class="h2-vert">Avec quoi on bouquette ?</h2>
+        <p><strong>Et si on retournait à nos basiques ? Des roses en juin, du mimosa en janvier mais surtout, des fleurs
+            qui viennent de chez nous.</strong> Chez Arrosé, on s'engage à vous proposer au maximum des fleurs de
+          saisons provenant de Bretagne et de France.</p>
+        <br />
+        <p><em>À noter que nous n'excluons pas la possibilité de passer des commandes de fleurs hollandaises en cas de
+            rupture de stock, mais que cela sera spécifié en toute transparence en boutique.</em></p>
       </div>
-      <!-- Remplacer par : <img src="images/bouquet.jpg" alt="Bouquet de fleurs" /> -->
-      <div class="ph-green" style="height:420px;"></div>
+      <img src="images/bouquet.jpeg" alt="Bouquet de fleurs" class="ph-green" style="height:420px;">
     </div>
   </section>
 
   <!-- Thèmes des ateliers floraux -->
   <section class="section-green">
-    <h2>Thème de nos ateliers floraux</h2>
-
+    <h2 style="font-family: var(--font-hand); text-transform: none; margin-bottom: 60px; text-align: center;">Thème de
+      nos ateliers floraux</h2>
     <div class="ateliers-grid">
+
       <div class="card-img ph-green">
-        <!-- Remplacer par : <img src="images/atelier-bouquet.jpg" alt="Bouquet de saison" /> -->
-        <div class="card-img-label">BOUQUET<br/>DE SAISON</div>
+        <img src="images/bouquet-saison.jpeg" alt="atelier-bouquet-saison" class="card-bg">
+        <div class="card-img-label">BOUQUET<br />DE SAISON</div>
+        <div class="card-hover">
+          <p>2h30 pour apprendre à faire son bouquet déstructuré avec nos fleurs de saison, papoter et prendre un petit
+            goûter.</p>
+        </div>
       </div>
+
       <div class="card-img ph-green">
-        <div class="card-img-label">COMPOSITION<br/>CENTRE DE TABLE</div>
+        <img src="images/composition-florale.jpg" alt="atelier-centre-table" class="card-bg">
+        <div class="card-img-label">COMPOSITION<br />CENTRE DE TABLE</div>
+        <div class="card-hover">
+          <p>2h30 pour apprendre à faire un centre de table piqué à l'aide de grillage à poule, papoter et prendre un
+            petit goûter.</p>
+        </div>
       </div>
+
       <div class="card-img ph-green">
-        <div class="card-img-label">PARENTS<br/>&amp; ENFANTS</div>
+        <img src="images/enfants-parents.jpg" alt="atelier-parents-enfants" class="card-bg">
+        <div class="card-img-label">PARENTS<br />&amp; ENFANTS</div>
+        <div class="card-hover">
+          <p>2h30 pour faire un kokedama ou un terrarium avec son enfant (à partir de 8 ans), papoter et prendre un
+            petit goûter.</p>
+        </div>
       </div>
+
     </div>
     <div class="ateliers-row2">
-      <div class="card-img ph-green">
-        <div class="card-img-label">COURONNE<br/>DE SAISON</div>
-      </div>
-      <div class="card-img ph-green">
-        <div class="card-img-label">SUR<br/>MESURE</div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Calendrier des ateliers -->
-  <section class="section-green" style="padding-top: 0;" id="calendrier-ateliers">
-    <h2>Calendrier des ateliers</h2>
-    <p style="color:rgba(240,230,218,.8); font-size:.85rem; margin-bottom:32px;">
-      Réservation par téléphone au xx xx xx xx xx ou par mail
-      <a class="cta-link cta-link-beige" href="contact.html">ici</a>
-    </p>
-    <div class="calendrier-grid">
-      <div class="cal-month">
-        <h4>Septembre 2026</h4>
-        <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
+      <div class="card-img ph-green">
+        <img src="images/couronne.jpg" alt="atelier-couronne-saison" class="card-bg">
+        <div class="card-img-label">COURONNE<br />DE SAISON</div>
+        <div class="card-hover">
+          <p>2h30 pour créer sa couronne en fonction de la saison (sapin, mimosa, séché…)</p>
+        </div>
       </div>
-      <div class="cal-month">
-        <h4>Octobre 2026</h4>
-        <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
+
+      <div class="card-img ph-green">
+        <img src="images/sur-mesure.jpeg" alt="atelier-sur-mesure" class="card-bg">
+        <div class="card-img-label">SUR<br />MESURE</div>
+        <div class="card-hover">
+          <p>Vous avez une idée en tête pour un EVJF, un anniversaire ou juste pour passer du bon temps entre copines ?
+            Contactez-moi et nous organiserons cela !</p>
+        </div>
       </div>
-      <div class="cal-month">
-        <h4>Novembre 2026</h4>
-        <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
-      </div>
-      <div class="cal-month">
-        <h4>Décembre 2026</h4>
-        <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
-      </div>
-      <div class="cal-month">
-        <h4>Janvier 2027</h4>
-        <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
-      </div>
-      <div class="cal-month">
-        <h4>Février 2027</h4>
-        <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
-      </div>
-      <div class="cal-month">
-        <h4>Mars 2027</h4>
-        <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
-      </div>
-      <div class="cal-month">
-        <h4>Avril 2027</h4>
-        <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
-      </div>
-      <div class="cal-month">
-        <h4>Mai 2027</h4>
-        <ul><li>xx/xx : bla bla (8 places)</li><li>xx/xx : bla bla (8 places)</li></ul>
-      </div>
+
     </div>
   </section>
 
   <!-- Inscriptions -->
-  <section class="demande-section">
+  <section class="demande-section-inscription">
     <h2>Inscriptions</h2>
-    <div>
-      <p>Pour vous inscrire à l'un de nos ateliers, contactez-nous par téléphone au xx xx xx xx xx ou via notre formulaire de contact.</p>
-      <a class="cta-link" href="contact.html">Nous contacter →</a>
+    <p>Pour vous inscrire à l'un de nos ateliers, remplissez le formulaire ci-dessous ou contactez-nous par téléphone au
+      xx xx xx xx xx.</p>
+
+    <form class="inscription-form" action="https://formspree.io/f/VOTRE_ID" method="POST" id="inscription-form">
+      <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" required placeholder="Erell" />
+      </div>
+
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required placeholder="Dupont" />
+      </div>
+
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required placeholder="tanguy@exemple.fr" />
+      </div>
+
+      <div>
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="06 xx xx xx xx" />
+      </div>
+
+      <div class="field-full">
+        <label for="atelier">Atelier souhaité</label>
+        <select id="atelier" name="atelier" required>
+          <option value="" disabled selected>— Choisir un atelier —</option>
+          <option value="bouquet-saison">Bouquet de saison</option>
+          <option value="centre-table">Composition centre de table</option>
+          <option value="parents-enfants">Parents &amp; Enfants</option>
+          <option value="couronne-saison">Couronne de saison</option>
+          <option value="sur-mesure">Sur mesure</option>
+        </select>
+      </div>
+
+      <div class="field-full">
+        <label for="message">Message (optionnel)</label>
+        <textarea id="message" name="message" placeholder="Une question, une précision…"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">
+        → Envoyer ma demande
+      </button>
+    </form>
+
+    <div class="form-success" id="form-success">
+      ✓ Votre demande a bien été envoyée ! Nous vous répondrons dans les plus brefs délais.
     </div>
+
   </section>
 
   <div id="footer-placeholder"></div>
   <script src="js/components.js"></script>
+  <script>
+    /* ── Tap mobile pour les cartes ─────────────────── */
+    document.querySelectorAll(".card-img").forEach((card) => {
+      card.addEventListener("click", () => {
+        const isOpen = card.classList.contains("tapped");
+        document.querySelectorAll(".card-img").forEach((c) => c.classList.remove("tapped"));
+        if (!isOpen) card.classList.add("tapped");
+      });
+    });
+
+    /* ── Confirmation Formspree (AJAX optionnel) ────── */
+    const form = document.getElementById("inscription-form");
+    const success = document.getElementById("form-success");
+
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: data,
+          headers: {
+            Accept: "application/json"
+          },
+        });
+        if (res.ok) {
+          form.style.display = "none";
+          success.style.display = "block";
+        } else {
+          alert("Une erreur est survenue. Merci de réessayer ou de nous contacter par téléphone.");
+        }
+      });
+    }
+  </script>
 </body>
+
 </html>

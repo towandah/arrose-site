@@ -6,72 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vins – Arrosé</title>
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* ── DÉGUSTATIONS ───────────────────────────────── */
-    .degu-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 48px;
-      margin-top: 24px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .degu-card h3 {
-      font-family: var(--font-title);
-      font-weight: 700;
-      font-size: 0.85rem;
-      letter-spacing: .1em;
-      text-decoration: underline;
-      margin-bottom: 14px;
-      color: var(--beige);
-    }
-
-    .degu-card p {
-      margin-bottom: 10px;
-    }
-
-    .degu-card ul {
-      list-style: none;
-      margin: 8px 0;
-    }
-
-    .degu-card ul li {
-      font-size: 0.85rem;
-      line-height: 1.8;
-      color: rgba(240, 230, 218, .85);
-    }
-
-    .degu-card ul li::before {
-      content: "• ";
-    }
-
-    .degu-aside {
-      font-family: var(--font-hand);
-      font-size: 1.1rem;
-      line-height: 1.7;
-      text-align: center;
-      color: var(--beige);
-      border-left: 1px solid rgba(240, 230, 218, .3);
-      padding-left: 40px;
-    }
-
-    @media (max-width: 900px) {
-      .degu-cards {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        max-width: 100%;
-      }
-
-      .degu-aside {
-        border-left: none;
-        border-top: 1px solid rgba(240, 230, 218, .3);
-        padding-left: 0;
-        padding-top: 24px;
-      }
-    }
-  </style>
 </head>
 
 <body data-page="vins">
@@ -91,6 +25,8 @@
           bretons. N'y voyez là aucun chauvinisme bien sûr. (on a même du vin made in BZH…)</p>
         <p>Côté spiritueux, environ <strong>80 bouteilles</strong> ornent la vieille armoire de Mamie, ne les laissez
           donc pas prendre la poussière. Au menu : whisky, gin, rhum, ainsi que différentes liqueurs et apéritifs.</p>
+        <p><b><i>Enfin, l’espace cave est aussi pourvu de boissons sans alcool afin de ravir petits et grands !</i></b>
+        </p>
       </div>
       <img src="images/cave.jpeg" alt="Cave à vins" style="height:420px; object-fit:cover;" />
     </div>
@@ -98,7 +34,8 @@
 
   <!-- Une petite dégustation ? -->
   <section class="section-dark">
-    <h2 style="font-family: var(--font-hand); text-transform: none; letter-spacing: 0;">Une petite dégustation, ça te
+    <h2 style="font-family: var(--font-hand); text-transform: none; letter-spacing: 0; margin-bottom: 60px;">Une petite
+      dégustation, ça te
       tente ?</h2>
     <div class="degu-cards">
       <div class="degu-card">
@@ -122,8 +59,10 @@
           ou appelle-nous au xx xx xx xx xx.</p>
       </div>
       <div class="degu-aside" style="display: flex; align-items: center; justify-content: center;">
-        Chaque dégustation s'accompagne d'un plateau de fromage et de charcuterie.<br /><br />
-        Elle se déroule à partir de 19h30, à la fermeture de la boutique.
+        <span style="font-size: 1.3em;">
+          Chaque dégustation s'accompagne d'un plateau de fromage et de charcuterie.<br /><br />
+          Elle se déroule à partir de 19h30, à la fermeture de la boutique.
+        </span>
       </div>
     </div>
   </section>
@@ -180,7 +119,7 @@
     <h2>Une demande plus spécifique ?</h2>
     <div>
       <p>Une dégustation privatisée et sur mesure, une commande pour un évènement, un partenariat…</p>
-      <p>On est curieux, discutons-en : <a class="cta-link" href="contact.html">Contact →</a></p>
+      <p>On est curieux, discutons-en : <a class="cta-link" href="contact.html">→ Contact</a></p>
     </div>
   </section>
 
